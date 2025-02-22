@@ -43,8 +43,8 @@
 
         <input required id="email" type="email" name="email" />
 
-        <label class="radio-btns"> Query Type </label>
-        <div class="me">
+        <p class="query"> Query Type </p>
+        <div class="me" id="box1">
           <div class="box">
             <input
               id="general-enquiry"
@@ -67,7 +67,7 @@
           </div>
         </div>
 
-        <label for="textarea"> Enter a Message </label>
+        <label for="message" > Enter a Message </label>
         <textarea
           required
           id="message"
@@ -76,13 +76,10 @@
           rows="4"
           cols="50"
         ></textarea>
-        <input required id="checkbox" type="checkbox" />
 
+        <input required id="checkbox" type="checkbox" />
         <label for="checkbox">I consent to being contacted by the team</label>
-        <span class="error-message"
-          >Check box must be checked before submission</span
-        >
-        <button class="btn" id="submit">Submit</button>
+        <button class="btn" id="submit" type="submit">Submit</button>
       </form>
     </div>
     <script src="./script.js"></script>

@@ -64,7 +64,7 @@ body {
    
   }
 
-  label::after {
+  label::after, .query::after {
     content: "*";
     color : hsl(169, 82%, 27%);
   }
