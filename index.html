@@ -27,9 +27,9 @@
       <h3>Message sent!</h3>
       <p>Thanks for completing the form, we will be in touch soon!</p>
     </div>
-    <div id="form-container">
+    <main id="form-container">
       <h1>Contact Us</h1>
-      <form action="" id="form">
+      <form action="" id="form" aria-label="form">
         <label for="fname">First Name </label>
         <label class="lab" for="lname">Last Name </label>
         <span class="error-message">Please enter a valid lastname address</span>
@@ -43,10 +43,12 @@
 
         <input required id="email" type="email" name="email" />
 
-        <p class="query"> Query Type </p>
-        <div class="me" id="box1">
+        
+        <fieldset class="me" id="box1">
+          <legend class="query">Query Type</legend>
           <div class="box">
             <input
+          
               id="general-enquiry"
               required
               name="enquiry"
@@ -57,6 +59,7 @@
           </div>
           <div class="box">
             <input
+          
               id="support-enquiry"
               required
               name="enquiry"
@@ -65,7 +68,7 @@
             />
             <label for="support-enquiry"><span>Support Request</span></label>
           </div>
-        </div>
+        </fieldset>
 
         <label for="message" > Enter a Message </label>
         <textarea
@@ -81,7 +84,7 @@
         <label for="checkbox">I consent to being contacted by the team</label>
         <button class="btn" id="submit" type="submit">Submit</button>
       </form>
-    </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -127,6 +127,7 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
     display: flex;
     ;
 
+    border: none;
   }
   .box 
 
