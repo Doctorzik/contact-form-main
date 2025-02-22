@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="favicon" />
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="bg" id="bg">
+      <h3>Message sent!</h3>
+      <p>Thanks for completing the form, we will be in touch soon!</p>
+    </div>
+    <div id="form-container">
+      <h1>Contact Us</h1>
+      <form action="" id="form">
+        <label for="fname">First Name </label>
+        <label class="lab" for="lname">Last Name </label>
+        <span class="error-message">Please enter a valid lastname address</span>
+
+        <div class="me">
+          <input required id="fname" type="text" />
+          <input required id="lname" type="text" />
+        </div>
+
+        <label for="email">Email Address </label>
+
+        <input required id="email" type="email" name="email" />
+
+        <label class="radio-btns"> Query Type </label>
+        <div class="me">
+          <div class="box">
+            <input
+              id="general-enquiry"
+              required
+              name="enquiry"
+              value="general"
+              type="radio"
+            />
+            <label for="general-enquiry"><span>General Enquiry</span></label>
+          </div>
+          <div class="box">
+            <input
+              id="support-enquiry"
+              required
+              name="enquiry"
+              value="support"
+              type="radio"
+            />
+            <label for="support-enquiry"><span>Support Request</span></label>
+          </div>
+        </div>
+
+        <label for="textarea"> Enter a Message </label>
+        <textarea
+          required
+          id="message"
+          name="textarea"
+          placeholder="Enter a Messsage"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <input required id="checkbox" type="checkbox" />
+
+        <label for="checkbox">I consent to being contacted by the team</label>
+        <span class="error-message"
+          >Check box must be checked before submission</span
+        >
+        <button class="btn" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

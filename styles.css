@@ -1,0 +1,148 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+  
+  background-color:  hsl(148, 38%, 91%);
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+ 
+  font-family: 'Karla', 'Lucida Sans Regular'
+  
+ }
+
+  #form-container {
+    background-color: white;
+   border-radius: 10px;
+    max-width: 700px;
+    border: 2px  2px red;
+    padding: 15px;
+    margin: 50px 10px;
+  }
+
+  /* input:invalid {
+    border: 2px solid red;
+} */
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+/* input:invalid + .error-message {
+    display: block;
+} */
+  h1 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+   input, .box, textarea{
+    display: block;
+    width: 98%;
+    line-height: 2em;
+    margin-bottom: 12px;
+    border: 2px solid hsl(169, 82%, 27%);
+    border-width: 1px;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 100px;
+  }
+ 
+  input[type="radio" ], input[type="checkbox"] {
+    display: inline;
+    width: auto;
+
+  }
+  label, input:hover {
+    cursor: pointer;
+  }
+   div > label::after {
+    content: "";
+   
+  }
+
+  label::after {
+    content: "*";
+    color : hsl(169, 82%, 27%);
+  }
+
+ 
+.btn {
+     background-color: hsl(169, 82%, 27%);
+     color: #fff;
+     border-radius: 9px;
+     width:  100%;
+     height: 45px;
+     border: none;
+     font-size: large;
+     margin-top: 15px;
+     margin: 0 auto;
+}
+input:focus, button:focus {
+  outline: 2px solid  hsl(169, 82%, 27%);
+}
+input:hover, button:hover {
+  cursor: pointer; ;
+}
+input[type="radio"]:checked, input[type="checkbox"]:checked {
+
+  background-color: hsl(169, 82%, 27%);
+}
+.success {
+  width : 300px;
+  margin: 0 auto;}
+  .success h2 {
+    color: green;
+  }
+  .bg {
+  
+
+    background-color: hsl(150, 2%, 78%);
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    position: relative;
+    top: 100px;
+    display: none
+  }
+
+  .show {
+    position: fixed;;
+  top : 0px;
+  left : 40px;
+ 
+  max-width: 400px;
+  margin : 0 auto;
+  }
+@media (min-width: 768px) {
+  #form-container {
+    margin: 100px auto;
+  }
+  .me {
+    width : 100%;
+    
+    display: flex;
+    ;
+
+  }
+  .box 
+
+  {
+    margin-right: 20px;
+  }
+  .me input[type="text"] {
+    margin-right: 20px;
+  }
+  .lab {
+    margin-left: 270px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    margin:  10px auto;
+  }
+} 
+
