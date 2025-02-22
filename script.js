@@ -50,12 +50,13 @@ formElement.addEventListener("submit", (e) => {
 
   setTimeout(() => {
     bg.style.display = "block";
-    bg.classList.add("show") = 
+    bg.classList.add("show") 
   
 
     // Hide the element after 3 seconds
     setTimeout(() => {
       bg.style.display = "none";
+      bg.classList.remove("show") 
     }, 3000);
   });
   formElement.reset();

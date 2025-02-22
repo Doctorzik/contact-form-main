@@ -1,7 +1,9 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+* {
+  box-sizing: border-box;
+}
 body {
   
   background-color:  hsl(148, 38%, 91%);
@@ -59,16 +61,17 @@ body {
   label, input:hover {
     cursor: pointer;
   }
-   div > label::after {
-    content: "";
-   
-  }
+  
 
   label::after, .query::after {
     content: "*";
     color : hsl(169, 82%, 27%);
   }
 
+ #box1 {
+  border: none;
+  padding-left: 0px;;
+ }
  
 .btn {
      background-color: hsl(169, 82%, 27%);
@@ -122,24 +125,35 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
     margin: 100px auto;
   }
   .me {
-    width : 100%;
     
-    display: flex;
-    ;
+    width: 46%;
+    
+   
+    padding: 0px;
 
     border: none;
   }
-  .box 
-
+ 
+  .f 
   {
-    margin-right: 20px;
+    width: 45%;
   }
-  .me input[type="text"] {
-    margin-right: 20px;
-  }
-  .lab {
-    margin-left: 270px;
-  }
+ 
+
+ .mm {
+  
+  display: flex;
+  justify-content:space-between;
+ 
+
+ }
+ 
+  .radio-container {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+   }
+  
   .btn {
     display: block;
     width: 100%;

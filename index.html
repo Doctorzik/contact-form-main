@@ -30,44 +30,53 @@
     <main id="form-container">
       <h1>Contact Us</h1>
       <form action="" id="form" aria-label="form">
-        <label for="fname">First Name </label>
-        <label class="lab" for="lname">Last Name </label>
-        <span class="error-message">Please enter a valid lastname address</span>
-
-        <div class="me">
-          <input required id="fname" type="text" />
-          <input required id="lname" type="text" />
+        <div class="mm">
+          <div class="f">
+            <label for="fname"class="lab" >First Name </label>
+            <input required id="fname" type="text" />
+          </div>
+         
+  
+          <div class="me">
+             <label class="lab" for="lname">Last Name </label>
+            <input required id="lname" type="text" />
+          </div>
         </div>
+        
 
         <label for="email">Email Address </label>
 
         <input required id="email" type="email" name="email" />
 
         
-        <fieldset class="me" id="box1">
+        <fieldset  id="box1">
           <legend class="query">Query Type</legend>
-          <div class="box">
-            <input
-          
-              id="general-enquiry"
-              required
-              name="enquiry"
-              value="general"
-              type="radio"
-            />
-            <label for="general-enquiry"><span>General Enquiry</span></label>
+         
+          <div class="radio-container">
+            <div class="box">
+              <input
+            
+                id="general-enquiry"
+                required
+                name="enquiry"
+                value="general"
+                type="radio"
+              />
+              <label for="general-enquiry"><span>General Enquiry</span></label>
+            </div>
+            <div class="box">
+              <input
+            
+                id="support-enquiry"
+                required
+                name="enquiry"
+                value="support"
+                type="radio"
+              />
+              <label for="support-enquiry"><span>Support Request</span></label>
+            </div>
           </div>
-          <div class="box">
-            <input
-          
-              id="support-enquiry"
-              required
-              name="enquiry"
-              value="support"
-              type="radio"
-            />
-            <label for="support-enquiry"><span>Support Request</span></label>
-          </div>
+        
         </fieldset>
 
         <label for="message" > Enter a Message </label>
